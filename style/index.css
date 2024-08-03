@@ -1,1 +1,7 @@
 @import url(./global.css);
+@import url(./header.css);
+@import url(./utility.css);
+@import url(./customer.css);
+@import url(./history.css);
+@import url(./loyalty-card.css);
+@import url(./countdown.css);

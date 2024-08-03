@@ -1,0 +1,25 @@
+#countdown {
+    margin: auto;
+    margin-top: .5rem;
+   
+    background-color: var(--gray-100);
+    border-radius: 1rem ;
+    border: 1px solid var(--gray-300);
+    padding: 1rem;
+    width: 21rem;
+    height: 5.625rem;
+}
+
+@media (width >= 80em) {
+    #countdown {
+        grid-area: d;
+        margin: auto;
+               
+        background-color: var(--gray-100);
+        border-radius: 1rem ;
+        border: 1px solid var(--gray-300);
+        padding: 1rem;
+        width:  35.5rem;
+        height: 7.3rem;
+    }
+} 

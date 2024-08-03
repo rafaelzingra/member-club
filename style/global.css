@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: inherit;
+
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -30,8 +34,22 @@
 
 }
 
-
-
 body {
     font-family: var(--font-family);
+    background-color: var(--gray-200);
+} 
+
+img {
+    max-width: 100%;
+}
+
+@media (width >= 80em) {
+    #main {
+        grid-template-areas: "a b"
+                             "c b"
+                             "c d";
+        justify-content: center;
+        gap: 1rem;
+                             
+    }
 }
