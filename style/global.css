@@ -20,7 +20,7 @@
     --gray-200: #e9e7e9;
     --gray-100: #f4f1f2;
 
-    --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+    --gradient-base: linear-gradient(90deg,#2DAA6E 0%,#2DAAAA 33.33%,#856CCF 66.67%,#D658B3 100%);
     
     --font-family: "Oxygen", sans-serif;
 
