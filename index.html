@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Club</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">    
+
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">            
-                <img src="./assets/images/Logo.png" alt="Logo Member Club">            
+                <img src="./src/assets/images/Logo.png" alt="Logo Member Club">            
             </div>
             <div class="searchBox">
                 <input type="text" name="id" id="id" placeholder="ID do cartão">
@@ -29,139 +29,46 @@
                         <img src="https://github.com/rafaelzingra.png" alt="customer avatar">
                     </div>
                     <div>
-                        <p>Rafael Zingra</p>
-                        <p>Cliente desde 18/09/2023</p>
+                        <p id="clientName">Rafael Zingra</p>
+                        <p id="memberSince">Cliente desde 18/09/2023</p>
                     </div>
                 </div>
             </div>
             <div id="loyalty-card">
                 <div class="flex">
                    <p><span>Cartão Fidelidade</span><br>
-                   Ao fazer cortes de cabeço, o <br>
+                   Ao fazer cortes de cabelo, o <br>
                    décimo sai de graça</p>
-                   <p>id: 124-537-835-230</p>
+                   <p id="clientId">id: 124-537-835-230</p>
                 </div>
-                <div id="count" class="grid">
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/images/PinCheck.png" alt="">
-                   </div>
-                   <div class="marker">
-                       <!-- <img src="./assets/images/PinCheck.png" alt=""> -->
-                   </div>
-                   <div class="marker">
-                       <!-- <img src="./assets/images/PinCheck.png" alt=""> -->
-                   </div>
-                   <div class="marker">
-                       <img src="./assets/icons/gift-gray.svg" alt="">
-                   </div>
+                <div id="count" class="grid">                   
                 </div>
             </div>
             <div id="countdown">                
                 <div class="counter-wrapper">
                     <div class="counter">
-                    <h1>3</h1>                        
-                    <p>cortes restantes</p>
+                    <h1 id="remainingHaircuts">3</h1>                        
+                    <p>corte(s) restante(s)</p>
                     </div>
                     <div class="bar-wrapper">
                         <div class="bar">
-                            <div class="progress-bar"></div>
+                            <div class="progress-bar" id="progress-bar"></div>
                         </div>
-                        <span>7 de 10</span>
+                        <span id="haircutCounter">7 de 10</span>
                     </div>                    
                 </div>
                 <div class="gift">
                     <div>
-                        <img src="./assets/images/PinGift.png" alt="imagem de um presente">
+                        <img src="./src/assets/images/PinGift.png" alt="imagem de um presente">
                     </div>                        
                 </div>
             </div>
             <div id="history">
                 <div class="flex">
                     <p>Histórico</p>
-                    <p>7 cortes</p>
+                    <p id="totalHaircuts">7 cortes</p>
                 </div>
-                <div class="separator"></div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div>
-                        <p>29/04/2024</p>
-                        <p>18:30</p>
-                    </div>
-                    <div>
-                        <img src="./assets/icons/SealCheckGreen.svg" alt="">
-                    </div>
-                </div>
+                <div class="separator"></div>                
             </div>
         </div>
     </main>    
