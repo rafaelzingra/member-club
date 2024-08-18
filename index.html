@@ -13,11 +13,18 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">            
-                <img src="./src/assets/images/Logo.png" alt="Logo Member Club">            
-            </div>
-            <div class="searchBox">
-                <input type="text" name="id" id="id" placeholder="ID do cartão">
+            <div id="header">
+                <div class="logo">            
+                    <img src="./src/assets/images/Logo.png" alt="Logo Member Club">            
+                </div>
+                <div class="searchBox flex">
+                    <form class="form flex">
+                        <input type="text" name="id" id="id" placeholder="ID do cartão">
+                        <button>
+                            <img src="./src/assets/icons/Disabled.svg" alt="">                        
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -26,11 +33,11 @@
             <div id="customer">
                 <div class="flex items-center gap-1">
                     <div class="avatar-wrapper">
-                        <img src="https://github.com/rafaelzingra.png" alt="customer avatar">
+                        <img src="./src/assets/images/unknown.png" alt="customer avatar">
                     </div>
                     <div>
-                        <p id="clientName">Rafael Zingra</p>
-                        <p id="memberSince">Cliente desde 18/09/2023</p>
+                        <p id="clientName"></p>
+                        <p id="memberSince"></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +46,7 @@
                    <p><span>Cartão Fidelidade</span><br>
                    Ao fazer cortes de cabelo, o <br>
                    décimo sai de graça</p>
-                   <p id="clientId">id: 124-537-835-230</p>
+                   <p id="clientId">id: </p>
                 </div>
                 <div id="count" class="grid">                   
                 </div>
@@ -47,14 +54,14 @@
             <div id="countdown">                
                 <div class="counter-wrapper">
                     <div class="counter">
-                    <h1 id="remainingHaircuts">3</h1>                        
+                    <h1 id="remainingHaircuts">0</h1>                        
                     <p>corte(s) restante(s)</p>
                     </div>
                     <div class="bar-wrapper">
                         <div class="bar">
                             <div class="progress-bar" id="progress-bar"></div>
                         </div>
-                        <span id="haircutCounter">7 de 10</span>
+                        <span id="haircutCounter">0 de 0</span>
                     </div>                    
                 </div>
                 <div class="gift">
@@ -66,7 +73,7 @@
             <div id="history">
                 <div class="flex">
                     <p>Histórico</p>
-                    <p id="totalHaircuts">7 cortes</p>
+                    <p id="totalHaircuts">0 corte(s)</p>
                 </div>
                 <div class="separator"></div>                
             </div>

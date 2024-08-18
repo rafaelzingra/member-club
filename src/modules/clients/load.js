@@ -10,5 +10,5 @@ export async function clients() {
     
     const client = await clientFetchById({ clientId })
     
-    clientShow({client})
+    // clientShow({client})
 }

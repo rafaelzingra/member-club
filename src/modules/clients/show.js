@@ -11,12 +11,12 @@ const progressBar = document.getElementById('progress-bar')
 
 export function clientShow({client}) {
     try {        
-        // clientName.innerHTML = ""
-        // clientId.innerHTML = ""
-        // memberSince.innerHTML = ""
-        // remainingHaircuts.innerHTML = ""
-        // haircutCounter.innerHTML = ""
-        // totalHaircuts.innerHTML = ""
+        clientName.innerHTML = ""
+        clientId.innerHTML = ""
+        memberSince.innerHTML = ""
+        remainingHaircuts.innerHTML = ""
+        haircutCounter.innerHTML = ""
+        totalHaircuts.innerHTML = ""
         
         client.forEach(e => {
             clientName.textContent = e.name
