@@ -11,4 +11,4 @@ import "./style/loyalty-card.css"
 import "./style/countdown.css"
 
 // JS
-import "./modules/page-load.js"
+import "./modules/form/submit.js"

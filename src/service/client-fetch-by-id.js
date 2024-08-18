@@ -10,10 +10,14 @@ export async function clientFetchById ({clientId}) {
         const clients = data.filter((client) =>
             client.id == clientId
         )        
+
+        if(clients.length < 1) {
+            throw "404"
+        }
                 
         return clients
     } catch (error) {
         console.log(error)
-        alert("Não foi possível buscar o cliente. Tente novamente mais tarde.")
+        alert("Id inválido. Tente novamente")
     }
 }

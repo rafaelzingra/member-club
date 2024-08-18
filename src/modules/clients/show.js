@@ -4,19 +4,24 @@ const clientId = document.getElementById('clientId')
 const remainingHaircuts = document.getElementById('remainingHaircuts')
 const haircutCounter = document.getElementById('haircutCounter')
 const totalHaircuts = document.getElementById('totalHaircuts')
-const history = document.getElementById('history')
+const history = document.getElementById('history-rows')
 const count = document.getElementById('count')
 const progressBar = document.getElementById('progress-bar')
+const clientAvatar = document.getElementById('client-avatar')
 
 
 export function clientShow({client}) {
     try {        
         clientName.innerHTML = ""
-        clientId.innerHTML = ""
+        clientId.innerHTML = "id: "
         memberSince.innerHTML = ""
         remainingHaircuts.innerHTML = ""
         haircutCounter.innerHTML = ""
         totalHaircuts.innerHTML = ""
+        count.innerHTML= ""
+        history.innerHTML= ""
+        progressBar.style["width"] = "0%"
+        clientAvatar.setAttribute('src', './src/assets/images/unknown.png')
         
         client.forEach(e => {
             clientName.textContent = e.name
@@ -25,6 +30,8 @@ export function clientShow({client}) {
             remainingHaircuts.textContent = e.loyaltyCard.cutsRemaining
             haircutCounter.textContent = `${e.loyaltyCard.totalCuts} de ${e.loyaltyCard.cutsNeeded}`
             totalHaircuts.textContent = e.loyaltyCard.totalCuts+" corte(s)"
+            clientAvatar.setAttribute('src', `./src/assets/images/${e.id}.png`)
+            
 
             progressBar.style["width"] = (e.loyaltyCard.totalCuts/e.loyaltyCard.cutsNeeded)*100+"%"
 
